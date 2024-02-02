@@ -1,0 +1,21 @@
+
+<div class="container w-50 shadow p-2">
+  <div class="text-center">
+      <p class="fs-5">Student Sign Up</p>
+      <div class="underline bg-primary mx-auto"></div>
+  </div>
+  <div class="sms pt-2" *ngIf="message!==''">{{this.message}}</div>
+  <label for="" class="mt-2">Firstname</label>
+  <input type="text" class="form-control" [(ngModel)]="firstname">
+  <label for="" class="mt-2">Lastname</label>
+  <input type="text" class="form-control" [(ngModel)]="lastname">
+  <label for="" class="mt-2">Email</label>
+  <input type="text" class="form-control" [(ngModel)]="email">
+  <label for="" class="mt-2">Gender</label>
+  <input type="text" class="form-control" [(ngModel)]="gender">
+  <label for="" class="mt-2">Password</label>
+  <input type="text" class="form-control" [(ngModel)]="password">
+  <div class="text-center">
+      <button class="mt-2 w-50 btn btn-primary" (click)="submit()" >Sign Up</button>
+  </div>
+</div>

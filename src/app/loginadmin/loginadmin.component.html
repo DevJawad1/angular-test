@@ -1,0 +1,14 @@
+<div class="container w-50 shadow p-2 mt-3">
+    <div class="text-center">
+        <p class="fs-5">Sign In</p>
+        <div class="underline bg-primary mx-auto"></div>
+    </div>
+    <div class="p-2 message fw-bold text-center" *ngIf="message!==''">{{this.message}}</div>
+    <label for="" class="mt-2">Email</label>
+    <input type="text" class="form-control rounded {{inpclass}}" (click)="inp1()" [(ngModel)]="email">
+    <label for="" class="mt-2">Password</label>
+    <input type="text" class="form-control rounded {{inpclass2}}" (click)="inp2()" [(ngModel)]="password">
+    <div class="text-center">
+        <button class="mt-2 w-50 btn btn-primary" (click)="login()" >Sign In</button>
+    </div>
+</div>
